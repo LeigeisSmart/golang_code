@@ -9,7 +9,18 @@
 package main
 import "fmt"
 func main() {
-	print("hello, world2\n")
-	fmt.Printf("fmt hello world/n");
+
+	type Student struct{
+		name string
+		age int
+	}
+	//var stu Student
+	//var stu *Student= new(Student)
+	var stu *Student = &Student{}
+	stu.name = "leige"
+	stu.age = 100
+
+	fmt.Printf("name:%s,age:%d",stu.name,stu.age);
 }
 
+ 
